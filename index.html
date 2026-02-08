@@ -3,198 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lara Wulandari</title>
-  <style>
-    :root { --max: 820px; }
-
-    body{
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      max-width: var(--max);
-      margin: 48px auto;
-      padding: 0 18px;
-      line-height: 1.6;
-      color: #111;
-      background: #fff;
-    }
-
-    header{
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 12px;
-      border-bottom: 1px solid #e6e6e6;
-      padding-bottom: 14px;
-      margin-bottom: 22px;
-    }
-
-    h1{ margin: 0; font-size: 2rem; letter-spacing: -0.02em; }
-    .tagline{ margin: 6px 0 0; color: #444; }
-
-    nav a{
-      margin-left: 12px;
-      text-decoration: none;
-      color: #0b57d0;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-    nav a:hover{ text-decoration: underline; }
-
-    .contact{
-      margin: 14px 0 0;
-      color: #333;
-      font-size: 0.98rem;
-    }
-    .contact a{ color: #0b57d0; text-decoration: none; }
-    .contact a:hover{ text-decoration: underline; }
-
-    section{ margin: 26px 0; }
-    h2{
-      font-size: 1.15rem;
-      margin: 0 0 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #333;
-    }
-
-    ul{ padding-left: 18px; margin: 8px 0; }
-    li{ margin: 8px 0; }
-
-    .item-title{ font-weight: 700; }
-    .item-meta{ color: #444; }
-    .right-note{ color:#555; font-size: 0.95rem; }
-
-    .two-col{
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-    }
-    @media (min-width: 760px){
-      .two-col{ grid-template-columns: 1fr 1fr; }
-    }
-
-    footer{
-      margin-top: 36px;
-      padding-top: 14px;
-      border-top: 1px solid #e6e6e6;
-      color: #666;
-      font-size: 0.9rem;
-    }
-
-    /* Small “pill” links */
-    .pills a{
-      display: inline-block;
-      margin: 6px 8px 0 0;
-      padding: 6px 10px;
-      border: 1px solid #e6e6e6;
-      border-radius: 999px;
-      text-decoration: none;
-      color: #0b57d0;
-      font-weight: 600;
-      font-size: 0.92rem;
-    }
-    .pills a:hover{ background: #f6f8ff; }
-  </style>
+  <title>Your Name</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <header>
-    <div>
-      <h1>Lara Wulandari</h1>
-      <p class="tagline">[Your title/role] · [Your institution] · [Your research areas]</p>
-      <div class="contact">
-        Toronto, Canada ·
-        <a href="mailto:your.email@example.com">lara.wulandari@mail.utoronto.ca</a> ·
-        <a href="https://github.com/lara-wulandari" target="_blank" rel="noopener">GitHub</a> ·
-        <a href="https://www.linkedin.com/in/your-link" target="_blank" rel="noopener">LinkedIn</a> ·
-        <a href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
-      </div>
-      <div class="pills">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
-        <a href="#contact">Contact</a>
-      </div>
+
+  <div class="topbar">
+    <nav class="nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">CV</a>
+    </nav>
+  </div>
+
+  <main class="container">
+    <div class="hero">
+
+      <!-- Left profile card -->
+      <aside class="profile">
+        <img src="photo.jpg" alt="Portrait of Your Name" />
+
+        <h1>Your Name</h1>
+        <p class="role">[Your title/role] at [Your institution]</p>
+
+        <ul class="meta">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 22s7-5.2 7-12a7 7 0 0 0-14 0c0 6.8 7 12 7 12Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M12 13.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+            <span>[City, Country]</span>
+          </li>
+
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 6h16v12H4V6Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+            <a href="mailto:you@example.com">Email</a>
+          </li>
+
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 4h16v16H4V4Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M8 10v8M8 7.5v.5M12 10v8M12 10c0-1.2.8-2 2-2s2 .8 2 2v8" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+            <a href="[https://www.linkedin.com/in/your-link]" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 19V5m0 0h16M4 5l8 7 8-7" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+            <a href="[https://scholar.google.com/citations?user=XXXX]" target="_blank" rel="noopener">Google Scholar</a>
+          </li>
+
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 2h9l3 3v17H6V2Z" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M9 12h6M9 16h6M9 8h3" stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+            <a href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+          </li>
+        </ul>
+
+        <p class="small" style="margin-top:12px;">
+          You can also add GitHub, Twitter, or a research group link here.
+        </p>
+      </aside>
+
+      <!-- Right welcome card -->
+      <section class="welcome">
+        <h2>Welcome</h2>
+        <p>
+          I am a [PhD Candidate / MSc student / Researcher] in [Field] at [Institution],
+          specializing in [subfield]. My research interests include [A], [B], and [C].
+        </p>
+        <p>
+          I completed [degree] at [school], and previously [1 short sentence about background].
+        </p>
+        <p class="small">
+          Tip: Keep this to ~2–3 short paragraphs like the screenshot.
+        </p>
+      </section>
+
     </div>
-  </header>
+  </main>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>
-      I am a [PhD student / researcher] in [Department] at [University].
-      My research focuses on [1–2 sentence summary]. I am especially interested in
-      [topic A], [topic B], and [topic C].
-    </p>
-  </section>
-
-  <section id="research">
-    <h2>Research</h2>
-    <ul>
-      <li>
-        <span class="item-title">Working paper:</span>
-        <span class="item-meta">“Title of paper”</span>
-        <span class="right-note">— with Coauthor (optional)</span>
-        <br />
-        <span class="item-meta">
-          1–2 line description of what the paper does + main result.
-        </span>
-      </li>
-      <li>
-        <span class="item-title">Project:</span>
-        <span class="item-meta">“Another project title”</span>
-        <br />
-        <span class="item-meta">
-          1 line description. <a href="#" target="_blank" rel="noopener">[paper]</a>
-          <a href="#" target="_blank" rel="noopener">[code]</a>
-        </span>
-      </li>
-    </ul>
-  </section>
-
-  <section class="two-col">
-    <div id="teaching">
-      <h2>Teaching</h2>
-      <ul>
-        <li>
-          <span class="item-title">Course Name</span> — Role (TA/Instructor), Institution (20XX)
-        </li>
-        <li>
-          <span class="item-title">Course Name</span> — Role, Institution (20XX)
-        </li>
-      </ul>
-    </div>
-
-    <div id="talks">
-      <h2>Talks</h2>
-      <ul>
-        <li>
-          <span class="item-title">Talk title</span> — Venue, City (Month 20XX)
-        </li>
-        <li>
-          <span class="item-title">Seminar</span> — Department/Workshop (Month 20XX)
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      Email is best: <a href="mailto:your.email@example.com">your.email@example.com</a>.
-      You can also find my code on
-      <a href="https://github.com/lara-wulandari" target="_blank" rel="noopener">GitHub</a>.
-    </p>
-  </section>
-
-  <footer>
-    <p>Last updated: <span id="lastUpdated"></span></p>
-  </footer>
-
-  <script>
-    // Auto-fills "Last updated" with today's date (local)
-    const d = new Date();
-    document.getElementById("lastUpdated").textContent =
-      d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
-  </script>
 </body>
 </html>
