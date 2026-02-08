@@ -52,6 +52,26 @@ body{
   background: #f3f4f6;
 }
 
+/* Nav layout: name left, tabs right */
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left .site-name{
+  font-size: 1.1rem;
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.nav-right{
+  display: flex;
+  gap: 10px;
+}
+
 .nav a.active{
   border-color: var(--line);
   background: #f8fafc;
