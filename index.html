@@ -1,19 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lara Wulandari</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 40px auto;
+    :root { --max: 820px; }
+
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      max-width: var(--max);
+      margin: 48px auto;
+      padding: 0 18px;
       line-height: 1.6;
+      color: #111;
+      background: #fff;
     }
+
+    header{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 14px;
+      margin-bottom: 22px;
+    }
+
+    h1{ margin: 0; font-size: 2rem; letter-spacing: -0.02em; }
+    .tagline{ margin: 6px 0 0; color: #444; }
+
+    nav a{
+      margin-left: 12px;
+      text-decoration: none;
+      color: #0b57d0;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    nav a:hover{ text-decoration: underline; }
+
+    .contact{
+      margin: 14px 0 0;
+      color: #333;
+      font-size: 0.98rem;
+    }
+    .contact a{ color: #0b57d0; text-decoration: none; }
+    .contact a:hover{ text-decoration: underline; }
+
+    section{ margin: 26px 0; }
+    h2{
+      font-size: 1.15rem;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #333;
+    }
+
+    ul{ padding-left: 18px; margin: 8px 0; }
+    li{ margin: 8px 0; }
+
+    .item-title{ font-weight: 700; }
+    .item-meta{ color: #444; }
+    .right-note{ color:#555; font-size: 0.95rem; }
+
+    .two-col{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 760px){
+      .two-col{ grid-template-columns: 1fr 1fr; }
+    }
+
+    footer{
+      margin-top: 36px;
+      padding-top: 14px;
+      border-top: 1px solid #e6e6e6;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    /* Small “pill” links */
+    .pills a{
+      display: inline-block;
+      margin: 6px 8px 0 0;
+      padding: 6px 10px;
+      border: 1px solid #e6e6e6;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #0b57d0;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    .pills a:hover{ background: #f6f8ff; }
   </style>
 </head>
+
 <body>
-  <h1>Hello, world 👋</h1>
-  <p>This is my GitHub Pages website.</p>
+  <header>
+    <div>
+      <h1>Lara Wulandari</h1>
+      <p class="tagline">[Your title/role] · [Your institution] · [Your research areas]</p>
+      <div class="contact">
+        Toronto, Canada ·
+        <a href="mailto:your.email@example.com">your.email@example.com</a> ·
+        <a href="https://github.com/lara-wulandari" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://www.linkedin.com/in/your-link" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="cv.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+      <div class="pills">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#talks">Talks</a>
+        <a href="#service">Service</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      I am a [PhD student / researcher] in [Department] at [University].
+      My research focuses on [1–2 sentence summary]. I am especially interested in
+      [topic A], [topic B], and [topic C].
+    </p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <ul>
+      <li>
+        <span class="item-title">Working paper:</span>
+        <span class="item-meta">“Title of paper”</span>
+        <span class="right-note">— with Coauthor (optional)</span>
+        <br />
+        <span class="item-meta">
+          1–2 line description of what the paper does + main result.
+        </span>
+      </li>
+      <li>
+        <span class="item-title">Project:</span>
+        <span class="item-meta">“Another project title”</span>
+        <br />
+        <span class="item-meta">
+          1 line description. <a href="#" target="_blank" rel="noopener">[paper]</a>
+          <a href="#" target="_blank" rel="noopener">[code]</a>
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li>
+        <span class="item-title">Wulandari, L.</span> (20XX).
+        <span class="item-meta">“Publication title.”</span>
+        <em>Journal Name</em>.
+        <a href="#" target="_blank" rel="noopener">[link]</a>
+      </li>
+      <li>
+        <span class="item-title">Wulandari, L.</span> (20XX).
+        <span class="item-meta">“Another publication.”</span>
+        <em>Conference / Working Paper Series</em>.
+        <a href="#" target="_blank" rel="noopener">[pdf]</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="two-col">
+    <div id="teaching">
+      <h2>Teaching</h2>
+      <ul>
+        <li>
+          <span class="item-title">Course Name</span> — Role (TA/Instructor), Institution (20XX)
+        </li>
+        <li>
+          <span class="item-title">Course Name</span> — Role, Institution (20XX)
+        </li>
+      </ul>
+    </div>
+
+    <div id="talks">
+      <h2>Talks</h2>
+      <ul>
+        <li>
+          <span class="item-title">Talk title</span> — Venue, City (Month 20XX)
+        </li>
+        <li>
+          <span class="item-title">Seminar</span> — Department/Workshop (Month 20XX)
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="two-col">
+    <div id="service">
+      <h2>Service</h2>
+      <ul>
+        <li>Referee for: Journal Name (optional)</li>
+        <li>Organizer: Reading group / workshop (Year)</li>
+        <li>Department: Committee / mentoring (Year)</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Awards</h2>
+      <ul>
+        <li><span class="item-title">Award name</span> — Institution (Year)</li>
+        <li><span class="item-title">Fellowship name</span> — Institution (Year)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Email is best: <a href="mailto:your.email@example.com">your.email@example.com</a>.
+      You can also find my code on
+      <a href="https://github.com/lara-wulandari" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p>Last updated: <span id="lastUpdated"></span></p>
+  </footer>
+
+  <script>
+    // Auto-fills "Last updated" with today's date (local)
+    const d = new Date();
+    document.getElementById("lastUpdated").textContent =
+      d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+  </script>
 </body>
 </html>
