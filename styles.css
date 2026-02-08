@@ -9,7 +9,7 @@
   --line: #e5e7eb;
 
   /* Dark green accent */
-  --accent: #0f3d2e; /* tweak if you want darker/lighter */
+  --accent: #006D5B; /* tweak if you want darker/lighter */
 }
 
 *{ box-sizing: border-box; }
