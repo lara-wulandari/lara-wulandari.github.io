@@ -43,8 +43,8 @@ body{
 
 .site-name{
   font-weight: 700;
-  font-size: 1.6rem;
-  letter-spacing: -0.01em;
+  font-size: 1.4rem;
+  letter-spacing: 0.01em;
   text-decoration: none;
   color: var(--accent);
 }
