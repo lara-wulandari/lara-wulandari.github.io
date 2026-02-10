@@ -93,6 +93,7 @@ body{
 /* Left column (no card, no border) */
 .profile img{
   width: 100%;
+  max-width: 240px; /* try 220–280px */
   height: auto;
   display: block;
   border-radius: 0;
