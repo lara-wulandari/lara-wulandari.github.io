@@ -211,6 +211,11 @@ body{
   }
 }
 
+.cv-wrapper{
+  margin-top: 20px;
+}
+
+
 .plain-link:hover{
   color: var(--accent);
   text-decoration: underline;
