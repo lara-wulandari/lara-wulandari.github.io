@@ -209,6 +209,18 @@ body{
   .site-name{
     font-size: 1.8rem;
   }
+  .profile {
+    text-align: center;
+  }
+
+  .profile img {
+    display: block;
+    margin: 0 auto 18px auto;
+  }
+
+  .meta {
+    align-items: center;
+  
 }
 
 .cv-wrapper{
